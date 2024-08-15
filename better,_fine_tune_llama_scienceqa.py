@@ -168,17 +168,6 @@ pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer, max_le
 result = pipe(instruction)
 print(result[0]['generated_text'][len(instruction):])
 
-!git config --global user.email "scandypradaptap@gmail.com"
-!git config --global user.name "ScandyPradapta"
-
-!echo "ScandyPradapta/LLama2-Chatbot-AI.git" >> README.md
-!git init
-!git add README.md
-!git commit -m "first commit"
-!git branch -M Main
-!git remote add origin ScandyPradapta/LLama2-Chatbot-AI.git
-!git push -u origin Main
-
 !pip install streamlit
 
 import streamlit as st
